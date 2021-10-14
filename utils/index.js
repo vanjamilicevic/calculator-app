@@ -298,7 +298,7 @@ const equalWithoutEvaluate = () => {
        }
     })
 
-    document.getElementById("display-input").value = result.toString()
+    document.getElementById("display-input").value = parseFloat(result.toFixed(2))
     equalWasLastAction = true
 }
 
