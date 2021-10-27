@@ -1,0 +1,624 @@
+
+.main-container {
+
+    margin: auto;
+    margin-top: 10vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 2vh;
+}
+
+.title-and-themes-container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5vh;
+}
+
+.calc {
+
+    font-size: 32px;
+    line-height: 35.84px;
+    letter-spacing: -0.53px;
+    font-weight: 700;
+    margin-top: auto;
+}
+
+.themes-container {
+
+    display: grid;
+    grid-template-areas: 
+    ". theme-number"
+    "theme-title change-theme";
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.theme-title{
+
+    grid-area: theme-title;
+    font-size: 12px;
+    line-height: 13.44px;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+    margin-right: 20px;
+    padding-top: 5px;
+}
+
+
+.change-theme {
+
+    grid-area: change-theme;
+    background-color: #242D44;
+    padding: 4.7px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.theme-one-click {
+
+    width: 12px;
+    height: 12px;
+    background-color: #F96B5B;
+    margin-right: 4px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.theme-two-click {
+
+    width: 12px;
+    height: 12px;
+    background-color: #242D44;
+    margin-right: 4px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.theme-three-click {
+
+    width: 12px;
+    height: 12px;
+    background-color: #242D44;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+
+.theme-number {
+
+    grid-area: theme-number;
+    font-size: 12px;
+    line-height: 13.44px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-left: 10%;
+}
+
+
+.display {
+
+    background-color: #181F33;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+}
+
+.small-display {
+
+    background-color: #181F33;
+    font-size: 12px;
+    margin-top: 2%;
+    padding: 1%;
+    padding-bottom: 2%;
+    width: 90%;
+    margin: auto;
+    margin-top: 1%;
+
+    height: 1vh;
+    text-align: right;
+    overflow: hidden;
+}
+
+.display-input {
+
+    background-color: #181F33;
+    width: 89%;
+    padding: 4%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    /* padding-top: 33px; */
+    border: none;
+    border-radius: 10px;
+    margin-top: 1%;
+
+    font-family: "Spartan";
+    color: white;
+    text-align: right;
+    font-size: 48px;
+    line-height: 53.76px;
+    letter-spacing: -0.8px;
+    font-weight: 700;
+}
+
+.calc-buttons {
+
+    background-color: #242D44;
+    display: grid;
+    grid-template-areas: 
+    "seven eight nine del"
+    "four five six plus"
+    "one two three minus"
+    "point zeroo divide multiplyy"
+    "reset reset equal equal";
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
+
+    border-radius: 8px;
+}
+
+.small-button {
+
+    margin-bottom: 20%;
+    color: #434A59;
+    font-family: "Spartan";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35.84px;
+    padding: 10% 20% 10% 20%;
+    width: 84%;
+    border: none;
+    border-radius: 10px;
+    background-color: #EAE3DC;
+    box-shadow: inset 0px -4px 0px #B3A497;
+}
+
+.small-button:hover {
+
+    background-color: white;
+}
+
+.big-button {
+
+    color: #434A59;
+    font-family: "Spartan";
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.33px;
+    line-height: 22.4px;
+    width: 91.5%;
+    padding: 8% 30% 8% 30%;
+    border: none;
+    border-radius: 10px;
+    background-color: #647198;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+
+    grid-area: two;
+}
+
+.three {
+
+    grid-area: three;
+}
+
+.four {
+
+    grid-area: four;
+}
+
+.five {
+
+    grid-area: five;
+}
+
+.six {
+
+    grid-area: six;
+}
+
+.seven {
+
+    grid-area: seven;
+}
+
+.eight {
+
+    grid-area: eight;
+}
+
+.nine {
+
+    grid-area: nine;
+}
+
+.zero {
+
+    grid-area: zeroo;
+}
+
+.del {
+
+    grid-area: del;
+
+    font-size: 20px;
+    letter-spacing: -0.33px;
+    line-height: 22.4px;
+    background-color: #647198;
+    color: white;
+    box-shadow: inset 0px -4px 0px #414E73;
+}
+
+.del:hover {
+
+    background-color: #A2B2E1;
+}
+
+.plus {
+
+    grid-area: plus;
+}
+.minus {
+
+    grid-area: minus;
+}
+
+.multiply {
+
+    grid-area: multiplyy;
+}
+
+.point {
+
+    grid-area: point;
+}
+
+.divide {
+
+    grid-area: divide;
+}
+
+.reset {
+
+    grid-area: reset;
+    color: white;
+    box-shadow: inset 0px -4px 0px #414E73;
+}
+
+.reset:hover {
+
+    background-color: #A2B2E1;
+}
+
+.equal {
+
+    grid-area: equal;
+    background-color: #D03F2F;
+    color: white;
+    box-shadow: inset 0px -4px 0px #93261A;
+}
+
+.equal:hover {
+
+    background-color: #F96B5B;
+}
+
+/* 
+    Theme two:
+     - Changing colors and styles for second theme design
+*/
+
+.body-theme-two {
+
+    background-color: hsl(0, 0%, 90%);
+}
+
+.title-and-themes-container-theme-two {
+
+    color: #36362C;
+}
+
+.theme-one-click-theme-two {
+
+    background-color: #D2CDCD;
+}
+
+.theme-two-click-theme-two {
+
+    background-color: #C85402;
+}
+
+.theme-three-click-theme-two {
+
+    background-color: #D2CDCD;
+}
+
+.change-theme-theme-two {
+
+    background-color: #D2CDCD;
+}
+
+.display-theme-two {
+
+    background-color: #EEEEEE;
+}
+
+.small-display-theme-two {
+
+    background-color: #EEEEEE;
+}
+
+.display-input-theme-two {
+
+    background-color: #EEEEEE;
+    color: #36362C;
+}
+
+.calc-buttons-theme-two {
+
+    background-color: #D2CDCD;
+}
+
+.small-button-theme-two {
+
+    background-color: #E5E4E1;
+    box-shadow: inset 0px -4px 0px #A79E91;
+    color: #36362C;
+}
+
+.reset-theme-two {
+
+    background-color: #378187;
+    box-shadow: inset 0px -4px 0px #1B6066;
+}
+
+.del-theme-two {
+
+    color: white;
+    background-color: #378187;
+    box-shadow: inset 0px -4px 0px #1B6066;
+}
+
+.equal-theme-two {
+
+    background-color: #C85402;
+    box-shadow: inset 0px -4px 0px #873901;
+}
+
+/* 
+    Theme three:
+     - Changing colors and styles for third theme design
+*/
+
+.body-theme-three {
+
+    background-color: hsl(268, 75%, 9%);
+}
+
+.title-and-themes-container-theme-three {
+
+    color: #FFE53D;
+}
+
+.theme-one-click-theme-three {
+
+    background-color: #1E0936;
+}
+
+.theme-two-click-theme-three {
+
+    background-color: #1E0936;
+}
+
+.theme-three-click-theme-three {
+
+    background-color: #D2CDCD;
+}
+
+.change-theme-theme-three {
+
+    background-color: #1E0936;
+}
+
+.display-theme-three {
+
+    background-color: #1E0936;
+}
+
+.small-display-theme-three {
+
+    background-color: #1E0936;
+}
+
+.display-input-theme-three {
+
+    background-color: #1E0936;
+    color: #FFE53D;
+}
+
+.calc-buttons-theme-three {
+
+    background-color: #1E0936;
+}
+
+.small-button-theme-three {
+
+    background-color: #331C4D;
+    box-shadow: inset 0px -4px 0px #881C9E;
+    color: #FFE53D;
+}
+
+.reset-theme-three {
+
+    background-color: #56077C;
+    box-shadow: inset 0px -4px 0px #BE15F4;
+    color: white;
+}
+
+.del-theme-three {
+
+    background-color: #56077C;
+    box-shadow: inset 0px -4px 0px #BE15F4;
+    color: white;    
+}
+
+.equal-theme-three {
+
+    background-color: #00DED0;
+    color: #1A2327;
+    box-shadow: inset 0px -4px 0px #6CF9F1;
+}
+
+/* 
+    Adding media queries for smaller desktop screens and mobile design
+*/
+
+@media only screen and (max-width: 1200px) {
+
+    .main-container{
+
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    body {
+
+        height: 110vh;
+    }
+
+    .main-container {
+
+        margin-top: 4vh;
+    }
+
+    .small-button {
+
+        font-size: 28px;
+        line-height: 31.36px;
+        letter-spacing: -0.47px;
+        font-weight: 700;
+        padding: 25% 0% 25% 0%;
+        border-radius: 7px;
+    }
+
+    .big-button {
+
+        padding: 15% 0% 15% 0%;
+    }
+
+    .del {
+
+        font-size: 16px;
+        line-height: 17.92px;
+        letter-spacing: -0.27px;
+    }
+
+    .reset {
+
+        font-size: 16px;
+        line-height: 17.92px;
+        letter-spacing: -0.27px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .main-container {
+
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+
+        height: 130vh;
+    }
+    .main-container {
+
+        width: 70%;
+    }
+
+    .small-button {
+
+        padding: 25% 0% 25% 0%;
+    }
+
+    .calc-buttons {
+    
+        padding-top: 7%;
+        padding-bottom: 7%;
+        padding-left: 6%;
+        padding-right: 6%;
+    
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .main-container {
+
+        width: 80%;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+
+    body {
+
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+
+    body {
+
+        height: 150vh;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+
+    body {
+
+        height: 180vh;
+    }
+}
+
+@media only screen and (max-height: 350px) {
+
+    body {
+
+        height: 210vh;
+    }
+}
+
+@media only screen and (max-height: 280px) {
+
+    body {
+
+        height: 230vh;
+    }
+}
+

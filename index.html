@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Setting code schema, viewport and loading styles -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="./CSS/globals.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+
+    <title>Calculator app</title>
+
+  </head>
+  <body>
+    <!-- 
+      Main container consists out of three sections:
+      - title and themes
+      - display
+      - buttons
+     -->
+    <main class="main-container">
+      <!-- 
+        Title and themes container consists out of
+        - calc title on the left side of calculator
+        - themes-container on the right side of calculator which contains:
+            - theme title
+            - number of theme
+            - change theme clickable section
+       -->
+      <section class="title-and-themes-container" id="title-and-themes-container">
+        <section class="calc" id="calc">
+          calc
+        </section>
+
+        <section class="themes-container" id="themes-container">
+          <section class="theme-title" id="theme-title">
+            THEME
+          </section>
+
+
+            <section class="theme-number" id="theme-number">
+              1 2 3
+            </section>
+
+            <section class="change-theme" id="change-theme">
+
+              <section class="theme-one-click" id="theme-one-click"></section>
+              <section class="theme-two-click" id="theme-two-click"></section>
+              <section class="theme-three-click" id="theme-three-click"></section>
+            </section>
+        
+        </section>
+      </section>
+
+      <section class="display" id="display">
+        <section class="small-display" id="small-display">
+          
+        </section>
+        <input class="display-input" id="display-input" type="text" disabled="disabled">
+      </section>
+
+      <section class="calc-buttons" id="calc-buttons">
+        <button class="one small-button digit" id="1">
+          1
+        </button>
+        <button class="two small-button digit" id="2">
+          2
+        </button>
+        <button class="three small-button digit" id="3">
+          3
+        </button>
+        <button class="four small-button digit" id="4">
+          4
+        </button>
+        <button class="five small-button digit" id="5">
+          5
+        </button>
+        <button class="six small-button digit" id="6">
+          6
+        </button>
+        <button class="seven small-button digit" id="7">
+          7
+        </button>
+        <button class="eight small-button digit" id="8">
+          8
+        </button>
+        <button class="nine small-button digit" id="9">
+          9
+        </button>
+        <button class="zero small-button digit" id="0">
+          0
+        </button>
+        <button class="del small-button" id="del">
+          del
+        </button>
+        <button class="reset big-button" id="reset">
+          RESET
+        </button>
+        <button class="equal big-button" id="equal">
+          =
+        </button>
+        <button class="plus small-button" id="plus">
+          +
+        </button>
+        <button class="minus small-button" id="minus">
+          -
+        </button>
+        <button class="divide small-button" id="divide">
+          /
+        </button>
+        <button class="multiply small-button" id="multiply">
+          x
+        </button>
+        <button class="point small-button" id="point">
+          .
+        </button>
+      </section>
+    </main>
+
+    <script src="./utils/index.js"></script>
+  </body>
+</html>
